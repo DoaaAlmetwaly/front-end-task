@@ -56,7 +56,7 @@ h1, h2 {
         height: 0;
         width: 100vw;
         position: absolute;
-        top: 120px;
+        top: 92px;
         left: 0;
         right: 0;
         background: #512EA6;
@@ -163,6 +163,12 @@ h1 {
     background-color: #512EA6 !important;
     border-color: white !important;
 }
+@media (max-width:786px) 
+{
+    .customer{
+        display: none !important;
+    }
+}
 /* DOWNLOAD */
 .download {
     background: url(../images/bg-4.png) center/cover no-repeat;
@@ -188,7 +194,12 @@ form a {
 form a:hover {
     background-color: #724ec9 !important;
 }
-
+@media(max-width:786px){
+    .contact img{
+        display: none;
+    }
+   
+}
 /* FOOTER */
 footer {
     background-image: url(../images/footer.png);

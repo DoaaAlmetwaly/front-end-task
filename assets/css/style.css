@@ -1,10 +1,203 @@
-*{
+/* GLOBAL STYLES */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
-    .owl-carousel .item{
-        height: 100vh;
+}
 
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+p {
+    color: #828282;
+}
+
+h1, h2 {
+    color: #512EA6;
+}
+
+/* NAVBAR */
+.nav-bar ul li a {
+    color: #512EA6;
+    transition: .2s;
+}
+
+.nav-bar ul li a:hover {
+    color: #FEB200;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 30px;
     }
-   
+
+    .icon {
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .icon .line {
+        width: 30px;
+        height: 3px;
+        background-color: #575a5e;
+        margin: 6px 0;
+    }
+
+    .nav-bar, .button {
+        display: none;
+    }
+
+    .nav-bar.active {
+        height: 400px;
+    }
+
+    .nav-bar {
+        height: 0;
+        width: 100vw;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        background: #512EA6;
+        overflow: hidden;
+        transition: height .5s;
+    }
+
+    .nav-bar ul {
+        display: block !important;
+        width: fit-content;
+        margin: 30px;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1 !important;
+    }
+
+    .nav-bar ul li {
+        padding-block: 10px;
+    }
+
+    .nav-bar ul li a.active, .nav-bar ul li a {
+        color: #FEB200 !important;
+    }
+
+    .right-side {
+        display: block !important;
+    }
+}
+
+/* PAGE HEADER */
+.page-header {
+    background: url(../images/bg-5.png) center/cover no-repeat;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.right-header {
+    padding-top: 70px;
+}
+
+@media (max-width: 600px) {
+    .app {
+        margin-bottom: 10px;
+    }
+}
+
+/* ADVANTAGES */
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.advantages .card:hover {
+    border: 1px solid #512EA6;
+}
+
+/* SLIDER */
+.slider {
+    background: url(../images/bg-2.png) center/cover no-repeat;
+    min-height: 100vh;
+}
+
+/* CUSTOMERS */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    background: #512EA6 !important;
+    z-index: 1;
+    width: 75px;
+    height: 50px;
+}
+
+.owl-nav button span {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+.arrow i{
+    color: #512EA6 !important;
+    
+}
+.arrow a{
+    border-color: #512EA6 !important;
+}
+.arrow  a:hover i{
+    color: white !important;
+}
+.arrow a:hover{
+    background-color: #512EA6 !important;
+    border-color: white !important;
+}
+/* DOWNLOAD */
+.download {
+    background: url(../images/bg-4.png) center/cover no-repeat;
+    min-height: 100vh;
+}
+
+.download h1 {
+    padding-top: 200px;
+}
+
+@media (max-width: 900px) {
+    .download h1 {
+        padding: 65px;
+    }
+}
+
+/* CONTACT US */
+form a {
+    background-color: #512EA6 !important;
+    border-color: #512EA6 !important;
+}
+
+form a:hover {
+    background-color: #724ec9 !important;
+}
+
+/* FOOTER */
+footer {
+    background-image: url(../images/footer.png);
+    height: 310px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-icons i {
+    color: #512EA6;
+}

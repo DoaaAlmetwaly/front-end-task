@@ -51,14 +51,20 @@
           <li class="">
             <a href="#" class="d-block text-decoration-none px-2" >تواصل معنا</a>
           </li>
-          <div class="me-5 right-side d-none">
-            <a href="#" class=" btn btn-warning py-2 px-5 text-white d-flex "> <i class="fa-solid fa-globe me-2 mt-1 "></i> اللغة <i class="fa-solid fa-chevron-down ms-2  mt-1"></i> </a>
-          </div>
+      
         </ul>
 
       </nav>
-      <div class="me-5 button">
-        <a href="#" class=" btn btn-warning py-2 px-5 text-white d-flex "> <i class="fa-solid fa-globe me-2 mt-1 "></i> اللغة <i class="fa-solid fa-chevron-down ms-2  mt-1"></i> </a>
+      <div class="dropdown show">
+        <a class="btn btn-warning py-md-2 px-md-5 text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe me-2 mt-1 "></i> اللغة
+        </a>
+      
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item " onclick="changeLanguage('ar')" href="#">العربية</a></li>
+          <li> <a class="dropdown-item" onclick="changeLanguage('en')" href="#">English</a></li>
+          
+        </ul>
       </div>
 <!-- END NAVBAR -->
  </header>
@@ -157,7 +163,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="owl-carousel  carousel_se_01_carousel owl-theme">
+          <div class="owl-carousel  carousel_se_01_carousel owl-theme" id="slider-recruitment">
             <div><img src="./assets/images/Orders.png" style="width: 70%;" class="text-center"  alt=""></div>
             <div><img src="./assets/images/Orders (1).png"  style="width: 50%; height: 40%;"alt=""></div>
             <div><img src="./assets/images/Orders (2).png"  style="width: 50%; height: 40%;"alt=""></div>
@@ -174,41 +180,44 @@
    <!-- END SLIDER -->
 <!-- CUSTOMERS -->
 
- <section class="py-5 ">
-    <div class="container">
-      <h2 class="text-center">آراء العملاء</h2>
-      <p class="text-center text-warning fs-5 pb-5">تعرف على لآراء عملاء ركائب</p>
-      <div class="row">
-        <div class="col-md-8 d-flex align-items-center">
-<div class="card text-start">
-<div class="card-body">
-<div class="owl-carousel carousel_se_02_carousel owl-theme">
-  <div>
-    <i class="fa-solid fa-quote-right fa-2x text-black-50 py-2" ></i>
-    <p class="lh-lg">في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل ،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في مكان واحد،</p>
-  <h5 class="fw-bold text-center">م.أحمد إبراهيم</h5>  
-  </div>
-  <div>
-    <i class="fa-solid fa-quote-right fa-2x text-black-50 py-2" ></i>
-    <p class="lh-lg">في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل ،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في مكان واحد،</p>
-  <h5 class="fw-bold text-center">م.أحمد إبراهيم</h5>  
-  </div>
-  <div>
-    <i class="fa-solid fa-quote-right fa-2x text-black-50 py-2" ></i>
-    <p class="lh-lg">في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل ،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في مكان واحد،</p>
-  <h5 class="fw-bold text-center">م.أحمد إبراهيم</h5>  
-  </div>
-</div>
-</div>
-</div>    
-</div>
-      <div class="col-md-4">
-<img src="./assets/images/customer.png" class="d-block customer" alt="">
-        </div> 
-      </div>
+    <section class="py-5">
+
+      <div class="container py-5">
+        <h2 class="text-center">آراء العملاء</h2>
+        <p class="text-center text-warning fs-5 pb-5">تعرف على لآراء عملاء ركائب</p>
+        <div class="row">
+          <div class="col-md-8  d-flex align-items-center">
+            <div class="card text-start mb-5">
+              <div class="card-body">
+              <div class="owl-carousel owl-theme" id="carousel_se_02_carousel">
+                <div>
+                  <i class="fa-solid fa-quote-right fa-2x text-black-50 py-2" ></i>
+                  <p class="lh-lg">في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل ،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في مكان واحد،</p>
+                <h5 class="fw-bold text-center">م.أحمد إبراهيم</h5>  
+                </div>
+                <div>
+                  <i class="fa-solid fa-quote-right fa-2x text-black-50 py-2" ></i>
+                  <p class="lh-lg">في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل ،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في مكان واحد،</p>
+                <h5 class="fw-bold text-center">م.أحمد إبراهيم</h5>  
+                </div>
+                <div>
+                  <i class="fa-solid fa-quote-right fa-2x text-black-50 py-2" ></i>
+                  <p class="lh-lg">في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل ،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة في مكان واحد،</p>
+                <h5 class="fw-bold text-center">م.أحمد إبراهيم</h5>  
+                </div>
+              </div>
+              </div>
+              </div> 
+          </div>
+          <div class="col-md-4">
+    <div>
+      <img src="./assets/images/customer.png" class="w-100" alt="">
     </div>
-   </section> 
-    <!-- END CUSTMORES -->
+        </div>
+          </div>
+      </div>
+    </section>
+        <!-- END CUSTMORES -->
      <!-- DOWNLOAD -->
  <section class="download py-5">
     <div class="container py-5">
@@ -223,7 +232,7 @@
             <img src="./assets/images/Group (3).png" alt="">
           </div>
         </div>
-        <div class="col-lg-6 ">
+        <div class="col-lg-6">
           <img src="./assets/images/Mask group.png" class="w-100 mt-4" alt="">
         </div>
       </div>
@@ -232,32 +241,40 @@
    <!-- END DOWNLOAD -->
      <!-- CONTACT US -->
 
-     <section class="contact py-5">
-        <div class="container py-5">
-          <div class="row py-5">
-            <div class="col-lg-6 py-5 ">
-              <h2>تواصل معنا</h2>
-              <p class="text-warning fs-5">إذا كان لديك استفسار برجاء التواصل معنا !</p>
-              <form class="">
-                <div class="mb-3">
-                  <input type="text" class="form-control" placeholder="الاسم الثلاثي">
-                </div>
-                <div class="mb-3">
-                  <input type="email" class="form-control text-start"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="البريد الالكتروني" >
+
+      
+         <section class="contact py-5">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>تواصل معنا</h2>
+                <p class="text-warning fs-5">إذا كان لديك استفسار برجاء التواصل معنا !</p>
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="الاسم الثلاثي">
                   </div>
                   <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="الرسالة"></textarea>
-                  </div>
-                <a type="submit" class="btn btn-primary w-100 py-3 text-white">إرسال</a>
-              </form>
+                    <input type="email" class="form-control text-start"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="البريد الالكتروني" >
+                    </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="الرسالة"></textarea>
+                    </div>
+                  <a type="submit" class="btn btn-primary w-100 py-3 text-white">إرسال</a>
+                </form>
+              </div>
+                  <div class="col-md-6">
+            <div class="contact-image">
+              <img src="./assets/images/contact-us.png" class="w-100" alt="">
             </div>
-             <div class="col-lg-6 ">
-                <img src="./assets/images/contact-us.png" style="width: 580px; height: 521px;" class="d-lg-block" alt="">
-            </div> 
+                </div>
+              </div>
           </div>
-        </div>
-       </section>
-         <!--END CONTACT US -->
+        </section>
+   <!--END CONTACT US -->
+
+
+
+
 
           <!-- FOOTER -->
   <footer class="py-5">
@@ -287,7 +304,7 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  <script src="./assets/js/owl.carousel.min.js"></script>
-  <script src="./assets/js/bootstrap.bundle.min.js"></script> 
-  <script src="./assets/js/script.js"></script>
+ <script src="./assets/js/script.js"></script>
+ <script src="./assets/js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Switcher</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="alert('Language dropdown clicked!')">
+      Language
+    </button>
+    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+      <a class="dropdown-item" href="#" onclick="changeLanguage('ar')">العربية</a>
+      <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="dropdown show">
+    <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  onclick="az">
+        اللغة
+    </a>
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" onclick="changeLanguage('ar')" href="#">العربية</a>
+      <a class="dropdown-item" onclick="changeLanguage('en')" href="#">English</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-bt6p4iSQD4rlRauS4fhWzS23cDZBcluJ3miGjyB5p3p68D2QgC5UT9FkWl8bUbj6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh/02FoFi17GXWfGJTC1UpU3ltCprf9IPnqGJ" crossorigin="anonymous"></script>
+
+<script>
+function changeLanguage(lang) {
+  // Assuming you have some logic to change the language of your website/application
+  // For demonstration purposes, we will simply alert the selected language
+  alert('Switching language to: ' + lang);
+
+  // You can add your logic here to change the language of your UI
+  // For example, you might reload the page with a query parameter indicating the language
+  // window.location.href = '?lang=' + lang;
+}
+</script>
+
+</body>
+</html>

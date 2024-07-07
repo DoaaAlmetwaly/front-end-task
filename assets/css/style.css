@@ -84,9 +84,7 @@ h1, h2 {
         color: #FEB200 !important;
     }
 
-    .right-side {
-        display: block !important;
-    }
+   
 }
 
 /* PAGE HEADER */
@@ -123,7 +121,15 @@ h1 {
     background: url(../images/bg-2.png) center/cover no-repeat;
     min-height: 100vh;
 }
-
+.owl-theme .owl-dots .owl-dot span{
+    background-color: #feb20023;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #FEB200;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #FEB200;
+}
 /* CUSTOMERS */
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
@@ -132,7 +138,6 @@ h1 {
     width: 75px;
     height: 50px;
 }
-
 .owl-nav button span {
     display: block;
     width: 100%;
@@ -140,35 +145,14 @@ h1 {
     color: white;
     text-align: center;
 }
-
-.owl-carousel .owl-nav button.owl-prev {
-    left: 0;
+.owl-carousel .owl-nav button:hover{
+    background-color: white !important;
+    border: 1px solid #512EA6;
+}
+.owl-nav button span:hover{
+    color: #512EA6;
 }
 
-.owl-carousel .owl-nav button.owl-next {
-    right: 0;
-}
-
-.arrow i{
-    color: #512EA6 !important;
-    
-}
-.arrow a{
-    border-color: #512EA6 !important;
-}
-.arrow  a:hover i{
-    color: white !important;
-}
-.arrow a:hover{
-    background-color: #512EA6 !important;
-    border-color: white !important;
-}
-@media (max-width:786px) 
-{
-    .customer{
-        display: none !important;
-    }
-}
 /* DOWNLOAD */
 .download {
     background: url(../images/bg-4.png) center/cover no-repeat;
@@ -194,11 +178,15 @@ form a {
 form a:hover {
     background-color: #724ec9 !important;
 }
-@media(max-width:786px){
-    .contact img{
-        display: none;
+@media (min-width:992px) {
+    .contact-image{
+        position: relative;
     }
-   
+    .contact-image img{
+        position: absolute;
+        top:-134px;
+    }
+    
 }
 /* FOOTER */
 footer {
